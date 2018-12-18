@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default initialValue => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(initialValue);
 
   return {
     value,
@@ -10,4 +10,4 @@ export default initialValue => {
     },
     reset: () => setValue('')
   };
-};
+}
